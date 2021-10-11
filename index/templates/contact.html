@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block title %} contact {% endblock title %} {% block body %}
+<div class="container my-5 ">
+    {% load static %}<img class="img-fluid h-25" src={% static 'images\contact.jpg' %} alt="">
+</div>
+<div class="container ">
+    <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+            <input class="input" type="text" name="name" placeholder="Enter Your Name">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="control">
+        <button class="button is-link">Submit</button>
+    </div>
+</div>
+
+{% endblock body %}
